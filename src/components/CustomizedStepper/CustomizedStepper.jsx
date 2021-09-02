@@ -70,7 +70,10 @@ export default function CustomizedSteppers() {
                         </div>
                     ) : (
                         <div>
-                            <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+                            {/* <Typography className={classes.instructions}> */}
+                                {getStepContent(activeStep)}
+                            {/* </Typography>
+                            Hola */}
                             <div>
                                 <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                                     Back
